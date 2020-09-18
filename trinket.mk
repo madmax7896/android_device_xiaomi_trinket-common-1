@@ -125,6 +125,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
