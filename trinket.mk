@@ -13,16 +13,15 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pa
 
+# Board Platform
+TARGET_BOARD_PLATFORM := trinket
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -31,15 +30,6 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener \
     tinymix
-
-PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/qcom/opensource/audio-hal/primary-hal/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -261,6 +251,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI Vendor Components
 TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
     av \
     bt \
     gps \
