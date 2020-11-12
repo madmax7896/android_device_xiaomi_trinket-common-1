@@ -60,6 +60,9 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 /dev/spidev0.1            0660   system     system
 /dev/hab                  0666   system     system
 
+# goodix_fp permission
+/dev/goodix_fp                                          0660   system     system
+
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
 
