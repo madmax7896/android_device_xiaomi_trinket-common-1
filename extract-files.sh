@@ -65,6 +65,9 @@ function blob_fixup() {
         # Remove vtcamera for ginkgo
         gawk -i inplace '{ p = 1 } /<CameraModuleConfig>/{ t = $0; while (getline > 0) { t = t ORS $0; if (/ginkgo_vtcamera/) p = 0; if (/<\/CameraModuleConfig>/) break } $0 = t } p' "${2}"
         ;;
+    product/lib64/libdpmframework.so)
+        patchelf --add-needed "libshim_dpmframework.so" "${2}"
+        ;;
     esac
 }
 

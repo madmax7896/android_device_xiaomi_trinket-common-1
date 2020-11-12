@@ -158,10 +158,6 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 TARGET_SEPOLICY_DIR := trinket
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /product/lib64/libdpmframework.so|libshim_dpmframework.so
-
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
