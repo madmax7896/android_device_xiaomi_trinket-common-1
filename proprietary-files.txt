@@ -670,18 +670,20 @@ vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
 
 # Snapdragon Computer Vision Engine (SCVE)
-product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-product/lib/vendor.qti.hardware.scve.panorama@1.0.so
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+product/lib/vendor.qti.hardware.scve.panorama@1.0.so
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-product/lib64/vendor.qti.hardware.scve.panorama@1.0.so
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+product/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
 vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service
 vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libfastcvopt.so
 vendor/lib/libscveBlobDescriptor.so
 vendor/lib/libscveBlobDescriptor_stub.so
 vendor/lib/libscveCommon.so
@@ -692,6 +694,8 @@ vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libscvePanorama.so
 vendor/lib/libscvePanorama_lite.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -700,7 +704,11 @@ vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libfastcvopt.so
 vendor/lib64/libscveBlobDescriptor.so
 vendor/lib64/libscveBlobDescriptor_stub.so
 vendor/lib64/libscveCommon.so
