@@ -279,14 +279,11 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
@@ -336,6 +333,9 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
+
+TARGET_KERNEL_VERSION := 4.14
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 # Wifi
 PRODUCT_PACKAGES += \
