@@ -224,7 +224,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.1.vendor
+    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
