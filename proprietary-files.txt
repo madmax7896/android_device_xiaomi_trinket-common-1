@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI V12.0.1.0.QCOMIXM China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 20.11.11 China Beta package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -206,15 +206,17 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/lib/libbase64.so
 vendor/lib/libcpion.so
 vendor/lib/libcppf.so
-vendor/lib/liboemcrypto.so
 vendor/lib/librmp.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/librmp.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+
+# DRM - Widevine L1 - from MIUI V12.0.1.0.QCOMIXM
+vendor/lib/liboemcrypto.so|9256fb73abc3be24d565e42a167feebc53b899d2
+vendor/lib64/liboemcrypto.so|4bc107c69108c71b53d8a04c9f4d4e3f7ece18e7
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
