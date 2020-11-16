@@ -82,24 +82,9 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
-# Display/Graphics
+# Display
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.trinket \
-    hwcomposer.trinket \
-    libdisplayconfig.qti \
-    libtinyxml \
-    libvulkan \
-    memtrack.trinket \
-    vendor.qti.hardware.display.allocator-service
 
 # DPM
 PRODUCT_PACKAGES += \
@@ -271,9 +256,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vndk/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QTI Vendor Components
+TARGET_BOARD_PLATFORM := trinket
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
+    display \
     gps \
     perf \
     wfd

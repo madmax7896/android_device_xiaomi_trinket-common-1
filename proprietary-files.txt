@@ -500,13 +500,6 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing - from LA.UM.9.11.r1-02100-NICOBAR.0
-product/etc/permissions/com.qti.snapdragon.sdk.display.xml|4c71d110023088c6ea8072227c714416e2792d75
--product/framework/com.qti.snapdragon.sdk.display.jar|b7946684b16ef1e334920b44eb95f873ce5bf04e
--system_ext/app/colorservice/colorservice.apk|52050facd288fbed88ba453b8f5d9268075154ec
-system_ext/lib/libsd_sdk_display.qti.so|010c3ea562dd6c0080aa17169d70dc4fd6ebd543
-system_ext/lib/libsdm-disp-apis.qti.so|2edb0d1e1f9983b75e11b752e2d43275984caca9
-system_ext/lib64/libsd_sdk_display.qti.so|3c298d3695d03a4cf1a9c786ee1d206dae4a2fe8
-system_ext/lib64/libsdm-disp-apis.qti.so|6606e07ca39d087dff2fed998c749b29c7585cee
 vendor/bin/hw/vendor.display.color@1.0-service|ce61a8290f57c5d759280038e6cfd3f7db887269
 vendor/bin/ppd|a4ece99b04a9d66b5f96771511c5a40dc089af84
 vendor/lib/vendor.display.color@1.0.so|080d62ec8813482a9a49bb875cd3c09b9a7d7406
