@@ -257,7 +257,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI Vendor Components
 TARGET_BOARD_PLATFORM := trinket
-TARGET_COMMON_QTI_COMPONENTS := \
+TARGET_COMMON_QTI_COMPONENTS += \
     av \
     bt \
     display \
