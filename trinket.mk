@@ -275,7 +275,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     gps \
-    perf
+    perf \
+    wfd
 
 # Vendor SPL
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
@@ -372,17 +373,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail_vendor \
-    libnl \
-    libqdMetaData \
-    libqdMetaData.system \
-    libqdMetaData.vendor \
-    libwfdaac_vendor \
-    vendor.display.config@2.0
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
