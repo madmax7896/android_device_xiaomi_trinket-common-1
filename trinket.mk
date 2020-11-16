@@ -271,7 +271,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vndk/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QTI Vendor Components
-TARGET_COMMON_QTI_COMPONENTS := \
+TARGET_COMMON_QTI_COMPONENTS += \
     av \
     bt \
     gps \
